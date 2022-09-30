@@ -1,0 +1,27 @@
+.ui-checkbox {
+	@apply flex items-center cursor-pointer gap-x-4;
+}
+
+.ui-checkbox--checkbox {
+	@apply w-[18px] h-[18px] border border-gray-500 rounded-[4px] flex justify-center items-center transition duration-100;
+}
+
+.ui-checkbox--checkbox:hover {
+	@apply ring-2 ring-blue-50;
+}
+
+.ui-checkbox--checkbox-checked {
+	@apply bg-blue-500 border-blue-500;
+}
+
+.ui-checkbox--checkbox-disabled {
+	@apply bg-gray-200;
+}
+
+.ui-checkbox--check {
+	@apply w-[12px] h-[12px] stroke-gray-600;
+}
+
+.ui-checkbox--check-checked {
+	@apply stroke-white;
+}
