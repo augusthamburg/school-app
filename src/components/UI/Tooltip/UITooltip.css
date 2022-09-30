@@ -1,0 +1,20 @@
+.ui-tooltip__container {
+	@apply relative;
+}
+.ui-tooltip__box {
+	@apply z-20 px-3.5 absolute py-3 text-gray-900 min-w-max bg-gray-100 rounded-[6px];
+}
+
+.ui-tooltip__position-top {
+	@apply -top-[48px] left-[50%] -translate-x-[50%];
+}
+
+.tooltip-enter-active,
+.tooltip-leave-active {
+	transition: opacity 0.2s ease;
+}
+
+.tooltip-enter-from,
+.tooltip-leave-to {
+	opacity: 0;
+}
