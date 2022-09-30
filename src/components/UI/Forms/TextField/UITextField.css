@@ -1,0 +1,27 @@
+.ui-text-field {
+	@apply  border border-gray-600/60 rounded-[5px] tracking-normal text-gray-900 w-full px-5 py-[12px];
+}
+
+.ui-text-field:focus {
+	@apply outline-none ring-2 ring-blue-50 border-blue-500;
+}
+
+.ui-text-field:disabled {
+	@apply bg-gray-100/30 cursor-not-allowed;
+}
+
+.ui-text-field__invalid {
+	@apply border-red-500 ring-2 ring-red-100;
+}
+
+.ui-text-field__hint {
+	@apply block mt-2 text-gray-700;
+}
+
+.ui-text-field__clearable {
+	@apply absolute right-5 top-[14.5px] w-5 h-5 stroke-gray-700 cursor-pointer;
+}
+
+.ui-text-field__clearable:hover {
+	@apply stroke-blue-500;
+}
