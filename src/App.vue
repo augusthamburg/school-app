@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import UITooltip from './components/UI/Tooltip/UITooltip.vue'
 import UITextField from './components/UI/Forms/TextField/UITextField.vue'
-
-const fds = ref('fdsfdsfds')
 </script>
 
 <template>
 	<div class="flex justify-between m-32">
-		<div class="w-[380px]">
-			<UITextField placeholder="fds" v-model="fds" />
-		</div>
 		<div>
-			{{ fds }}
+			<UITooltip content="На данный момент реализована только верхняя позиция.">
+				<UITextField placeholder="Введите ФИО сотрудника ..." />
+			</UITooltip>
 		</div>
 	</div>
 </template>

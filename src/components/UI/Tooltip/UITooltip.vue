@@ -6,22 +6,14 @@ const props = defineProps({
 		type: String,
 		required: true,
 	},
-	position: {
-		type: String,
-		default: 'top',
-		validator(value: string) {
-			return ['top', 'left', 'bottom', 'right'].includes(value)
-		},
-	},
 })
 
 const classes = ref({
 	container: 'ui-tooltip__container',
 	box: 'ui-tooltip__box',
-	position: `ui-tooltip__position-${props.position}`,
 })
 
-const show = ref(false)
+const show = ref(true)
 
 const onMove = () => {
 	show.value = true
@@ -37,7 +29,7 @@ const onLeave = () => {
 		<slot />
 		<Transition name="tooltip">
 			<template v-if="show">
-				<div :class="[classes.box, classes.position]">
+				<div :class="[classes.box]">
 					{{ props.content }}
 				</div>
 			</template>

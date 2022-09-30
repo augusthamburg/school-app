@@ -12,6 +12,7 @@ module.exports = {
 			normal: '1.3px',
 		},
 		colors: {
+			white: '#fff',
 			gray: {
 				100: '#F4F5F9',
 				200: '#edeff5',
@@ -20,6 +21,7 @@ module.exports = {
 				500: '#c1c4d6',
 				600: '#8f95b2',
 				700: '#696f8c',
+				800: '#474d66',
 				900: '#101840',
 			},
 			blue: {
