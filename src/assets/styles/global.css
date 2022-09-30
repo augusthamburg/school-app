@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply text-base antialiased font-sans tracking-normal;
+}
+
+body {
+	@apply text-gray-900;
+}
