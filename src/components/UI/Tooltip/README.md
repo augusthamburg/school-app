@@ -7,4 +7,4 @@ The Tooltip component is used to show more content of a target.
 
 | Property | Type | Description |
 |----------|:------|:-------------|
-| content| `string` | The content of the Popover. |
+| `content`| `string` | The content of the Popover. |
